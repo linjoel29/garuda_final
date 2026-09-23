@@ -1,0 +1,16 @@
+{
+  "name": "routewise-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RouteWise AI — End-to-End AI-Powered Delivery Route Optimization Platform",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
