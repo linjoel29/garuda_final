@@ -40,7 +40,7 @@ export const LoginPage: React.FC = () => {
             <Navigation className="h-7 w-7 text-white transform -rotate-45" />
           </div>
           <h1 className="text-2xl font-bold bg-gradient-to-r from-white via-slate-100 to-indigo-200 bg-clip-text text-transparent">
-            RouteWise AI
+            Garuda Path
           </h1>
           <p className="text-xs text-slate-400">Dispatcher Portal & AI Logistics Optimization</p>
         </div>

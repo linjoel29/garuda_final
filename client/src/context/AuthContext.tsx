@@ -14,11 +14,11 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<UserProfile | null>(() => {
-    const saved = localStorage.getItem('routewise_user');
+    const saved = localStorage.getItem('garudapath_user') || localStorage.getItem('routewise_user');
     return saved ? JSON.parse(saved) : null;
   });
   const [token, setToken] = useState<string | null>(() => {
-    return localStorage.getItem('routewise_token');
+    return localStorage.getItem('garudapath_token') || localStorage.getItem('routewise_token');
   });
   const [isLoading, setIsLoading] = useState(true);
 
@@ -28,7 +28,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         try {
           const res = await api.get('/auth/me');
           setUser(res.data.user);
-          localStorage.setItem('routewise_user', JSON.stringify(res.data.user));
+          localStorage.setItem('garudapath_user', JSON.stringify(res.data.user));
         } catch {
           logout();
         }
@@ -41,13 +41,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = (newToken: string, newUser: UserProfile) => {
     setToken(newToken);
     setUser(newUser);
-    localStorage.setItem('routewise_token', newToken);
-    localStorage.setItem('routewise_user', JSON.stringify(newUser));
+    localStorage.setItem('garudapath_token', newToken);
+    localStorage.setItem('garudapath_user', JSON.stringify(newUser));
   };
 
   const logout = () => {
     setToken(null);
     setUser(null);
+    localStorage.removeItem('garudapath_token');
+    localStorage.removeItem('garudapath_user');
     localStorage.removeItem('routewise_token');
     localStorage.removeItem('routewise_user');
   };

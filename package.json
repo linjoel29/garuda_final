@@ -1,8 +1,8 @@
 {
-  "name": "routewise-ai",
+  "name": "garuda-path",
   "version": "1.0.0",
   "private": true,
-  "description": "RouteWise AI — End-to-End AI-Powered Delivery Route Optimization Platform",
+  "description": "Garuda Path — End-to-End AI-Powered Delivery Route Optimization Platform",
   "scripts": {
     "install:all": "npm --prefix server install && npm --prefix client install",
     "dev:server": "npm --prefix server run dev",

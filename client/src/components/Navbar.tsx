@@ -17,10 +17,10 @@ export const Navbar: React.FC = () => {
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="text-lg font-bold bg-gradient-to-r from-white via-slate-100 to-indigo-200 bg-clip-text text-transparent">
-                  RouteWise
+                  Garuda
                 </span>
                 <span className="rounded bg-indigo-500/20 px-1.5 py-0.5 text-[10px] font-semibold text-indigo-400 border border-indigo-500/30">
-                  AI
+                  Path
                 </span>
               </div>
               <p className="text-[10px] text-slate-400 font-medium">Logistics Optimization Engine</p>

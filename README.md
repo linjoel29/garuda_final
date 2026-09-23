@@ -1,6 +1,6 @@
-# RouteWise AI — AI-Powered Delivery Route Optimization Platform
+# Garuda Path — AI-Powered Delivery Route Optimization Platform
 
-RouteWise AI is a production-grade, end-to-end logistics delivery route optimization platform. It combines a Capacitated Vehicle Routing Problem (CVRP) solver with time windows and priority weighting, live interactive Leaflet maps, dynamic delay re-routing, and natural language AI dispatch summaries powered by Google Gemini (`@google/genai`).
+Garuda Path is a production-grade, end-to-end logistics delivery route optimization platform. It combines a Capacitated Vehicle Routing Problem (CVRP) solver with time windows and priority weighting, live interactive Leaflet maps, dynamic delay re-routing, and natural language AI dispatch summaries powered by Google Gemini (`@google/genai`).
 
 ---
 
@@ -21,7 +21,7 @@ RouteWise AI is a production-grade, end-to-end logistics delivery route optimiza
 ## 📁 Repository Structure
 
 ```
-routewise-ai/
+garuda-path/
 ├── shared/
 │   └── schemas.ts               # Shared Zod validation schemas & TypeScript types
 ├── client/                      # React (Vite) + Tailwind CSS + Leaflet.js

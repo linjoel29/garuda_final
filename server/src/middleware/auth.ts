@@ -9,7 +9,7 @@ export interface AuthenticatedRequest extends Request {
   };
 }
 
-const JWT_SECRET = process.env.JWT_SECRET || 'routewise_super_secret_jwt_key_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'garudapath_super_secret_jwt_key_2026';
 
 export function authenticateToken(req: AuthenticatedRequest, res: Response, next: NextFunction) {
   // Check authorization header or cookie

@@ -1,7 +1,7 @@
 {
-  "name": "routewise-ai-server",
+  "name": "garuda-path-server",
   "version": "1.0.0",
-  "description": "Backend API service for RouteWise AI",
+  "description": "Backend API service for Garuda Path",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

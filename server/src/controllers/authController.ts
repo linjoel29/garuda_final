@@ -5,7 +5,7 @@ import { supabase, generateUUID } from '../db';
 import { AuthenticatedRequest } from '../middleware/auth';
 import { registerSchema, loginSchema } from '../shared/schemas';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'routewise_super_secret_jwt_key_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'garudapath_super_secret_jwt_key_2026';
 
 export async function registerUser(req: AuthenticatedRequest, res: Response) {
   try {

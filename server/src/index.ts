@@ -33,7 +33,7 @@ app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
-    service: 'RouteWise AI Logistics Server',
+    service: 'Garuda Path Logistics Server',
   });
 });
 
@@ -56,7 +56,7 @@ async function startServer() {
   try {
     await initDatabase();
     app.listen(PORT, () => {
-      console.log(`🚀 RouteWise AI Server running on http://localhost:${PORT}`);
+      console.log(`🚀 Garuda Path Server running on http://localhost:${PORT}`);
     });
   } catch (err) {
     console.error('Failed to initialize server:', err);

@@ -42,7 +42,7 @@ export const RegisterPage: React.FC = () => {
           <h1 className="text-2xl font-bold bg-gradient-to-r from-white via-slate-100 to-indigo-200 bg-clip-text text-transparent">
             Create Dispatcher Account
           </h1>
-          <p className="text-xs text-slate-400">Join RouteWise AI Logistics Platform</p>
+          <p className="text-xs text-slate-400">Join Garuda Path Logistics Platform</p>
         </div>
 
         <div className="glass-panel rounded-2xl p-6 border border-slate-800 shadow-2xl space-y-5">
