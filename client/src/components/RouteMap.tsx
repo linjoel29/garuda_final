@@ -35,16 +35,17 @@ async function fetchRoadGeometry(waypoints: [number, number][]): Promise<[number
   return waypoints;
 }
 
-// Component to dynamically fit map bounds around markers
+// Component to dynamically fit map bounds around markers once when coordinates change
 const MapBoundsFitter: React.FC<{ points: [number, number][] }> = ({ points }) => {
   const map = useMap();
+  const pointsKey = points.map((p) => `${p[0].toFixed(4)},${p[1].toFixed(4)}`).join('|');
 
   useEffect(() => {
-    if (points.length > 0) {
+    if (points.length > 0 && pointsKey) {
       const bounds = L.latLngBounds(points);
       map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
     }
-  }, [points, map]);
+  }, [pointsKey, map]);
 
   return null;
 };
